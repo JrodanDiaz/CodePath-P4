@@ -1,6 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
 * {
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: #1e2124;
+}
+
+.main-wrapper {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 /* ================================================================== */
@@ -8,18 +20,28 @@
 /* ================================================================== */
 
 .body-container {
-  background-color: blanchedalmond;
+  background-color: #424549;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 500px;
+  gap: 15px;
+  height: 1000px;
+  width: 750px;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.white-ubuntu-txt {
+  color: white;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .discover-btn {
-  border: none;
-  padding: 5px 10px;
-  background-color: black;
-  color: bisque;
+  padding: 10px 20px;
+  border-radius: 10px;
+
+  background-color: #26f294;
+  box-shadow: 0px 4px black;
   cursor: pointer;
 }
 
@@ -29,12 +51,58 @@
   gap: 30px;
 }
 
-.attributes-container p {
-  background-color: chocolate;
-  padding: 10px 20px;
-}
-
 .dog-img {
   height: 400px;
   width: 500px;
+}
+
+.attribute {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #7289da;
+  cursor: pointer;
+  box-shadow: 0px 4px black;
+}
+/* ================================================================== */
+/* Ban List  */
+/* ================================================================== */
+.ban-wrapper {
+  background-color: #424549;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  gap: 20px;
+  height: 100vh;
+  width: 300px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.banned-attribute {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #f24a26;
+  cursor: pointer;
+  box-shadow: 0px 4px black;
+}
+
+/* ================================================================== */
+/* Previous List  */
+/* ================================================================== */
+.previous-wrapper {
+  width: 300px;
+  height: 800px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #424549;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.prev-img {
+  height: 100px;
+  width: 100px;
 }
