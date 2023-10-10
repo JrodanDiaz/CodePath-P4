@@ -1,13 +1,28 @@
 import "./App.css";
-import Body from "./components/Body";
+import DiscoverPanel from "./components/DiscoverPanel";
+import BanList from "./components/BanList";
+import PreviousList from "./components/PreviousList";
+import { useState } from "react";
 
 function App() {
-  const API_Key = import.meta.env.VITE_APIKEY;
-  console.log(API_Key);
+  const [prevDogsList, setPrevDogsList] = useState([{}]);
+  const [bannedAttributes, setBannedAttributes] = useState([]);
+
+  const updatePreviousList = (newDog) => {
+    setPrevDogsList((prevList) => [...prevList, newDog]);
+  };
+
   return (
     <>
-      <h1>Papasito Website</h1>
-      <Body />
+      <div className="main-wrapper">
+        <PreviousList previousDogsList={prevDogsList} />
+        <DiscoverPanel
+          updatePreviousList={updatePreviousList}
+          bannedAttributes={bannedAttributes}
+          setBannedAttributes={setBannedAttributes}
+        />
+        <BanList bannedAttributes={bannedAttributes} />
+      </div>
     </>
   );
 }

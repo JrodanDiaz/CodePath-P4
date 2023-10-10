@@ -2,15 +2,14 @@
 import "../App.css";
 
 export default function PreviousList({ previousDogsList }) {
-  console.log(`Previous List: ${previousDogsList.map((dog) => dog)}`);
-  console.log(previousDogsList.length);
   return (
     <>
       <div className="previous-wrapper">
+        <h2 className="white-ubuntu-txt">Dogs we've seen so far</h2>
         {previousDogsList.length >= 2 &&
           previousDogsList.map((dog) => (
             <>
-              <p>{dog.breed}</p>
+              <p className="white-ubuntu-txt">{dog.breed}</p>
               <img src={dog.imageURL} className="prev-img" />
             </>
           ))}
