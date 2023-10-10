@@ -28,7 +28,7 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
+Here's a walkthrough of the web app:
 
 ![WalkthroughCodePathProject4](https://github.com/JrodanDiaz/CodePath-P4/assets/129818825/ee53301d-9cea-458d-9c1d-4ff1be879429)
 
